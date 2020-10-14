@@ -1,0 +1,10 @@
+<!--pages/welcome/welcome.wxml-->
+<image class="avatar"  src="/images/avatar/1.png"></image>
+
+<text>hello,Regin</text>
+
+<button>开启小程序之旅</button>
+
+
+
+
