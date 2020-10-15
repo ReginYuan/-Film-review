@@ -1,5 +1,6 @@
 /* pages/welcome/welcome.wxss */
-/* 设置整个页面的颜色  */
+/* 设置整个页面的颜色 
+ */
 page{
  /* 设置背景颜色 */
  background-color: #b3d4db;
@@ -22,7 +23,9 @@ page{
   margin-top: 160rpx;
  
 }
-
+.l-avatar{
+  margin-top: 160rpx;
+}
 
 /* 欢迎语句样式 */
 .motto{
