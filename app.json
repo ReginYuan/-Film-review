@@ -2,5 +2,14 @@
   "pages": [
     "pages/welcome/welcome"
   ],
+  
+  "window": {
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
   "sitemapLocation": "sitemap68.json"
 }
