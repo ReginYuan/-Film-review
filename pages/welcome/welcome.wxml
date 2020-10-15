@@ -1,9 +1,11 @@
 <!--pages/welcome/welcome.wxml-->
+
+<view class="container">
 <image class="avatar"  src="/images/avatar/1.png"></image>
+<text class="motto">hello,Regin</text>
+<view class="journey-container"><text>开启小程序之旅</text></view>
+</view>
 
-<text>hello,Regin</text>
-
-<button>开启小程序之旅</button>
 
 
 
