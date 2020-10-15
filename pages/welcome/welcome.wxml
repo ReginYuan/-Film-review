@@ -3,7 +3,7 @@
 <view class="container">
 <image class="avatar"  src="/images/avatar/1.png"></image>
 <text class="motto">hello,Regin</text>
-<view class="journey-container"><text>开启小程序之旅</text></view>
+<view class="journey-container"><text class="journey">开启小程序之旅</text></view>
 </view>
 
 

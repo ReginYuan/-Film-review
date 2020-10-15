@@ -28,5 +28,17 @@
 
 /* 按钮样式外边框 */
 .journey-container{
+border:1px  solid  #405f80;
+width: 200rpx;
+height: 80rpx;
+border-radius: 5px;
+text-align: center;
+}
 
+/* 按钮文本样式 */
+.journey{
+  font-size: 22rpx;
+  line-height: 80rpx;
+  color:#405f80 ;
+  font-weight: bold;
 }
