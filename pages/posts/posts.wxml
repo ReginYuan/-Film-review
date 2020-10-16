@@ -1,10 +1,14 @@
 <view>
-<swiper>
-<swiper-item>
+<swiper >
+<swiper-item >
 <!-- 插槽 -->
-<image src="/images/Lipstick.png"></image>
+<image  src="/images/Jin Gangchuan.png"></image>
 </swiper-item>
-<swiper-item>Content</swiper-item>
-<swiper-item>Content</swiper-item>
+<swiper-item>
+<image  src="/images/zhangyi.png"></image>
+</swiper-item>
+<swiper-item>
+<image  src="/images/dengchao.png"></image>
+</swiper-item>
 </swiper>
 </view>

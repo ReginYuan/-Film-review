@@ -1,1 +1,10 @@
 /* pages/posts/posts.wxss */
+swiper{
+  height:460rpx;
+  width:100%;
+}
+
+swiper  image{
+  height:460rpx;
+  width:100%;
+}
