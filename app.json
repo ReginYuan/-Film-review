@@ -6,7 +6,7 @@
   "window": {
     "navigationBarBackgroundColor": "#b3d4db",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "小程序",
+    "navigationBarTitleText": "Film review",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false

@@ -1,5 +1,5 @@
 <view>
-<swiper >
+<swiper interval="3000" indicator-dots="{{true}}" autoplay="{{true}}"  >
 <swiper-item >
 <!-- 插槽 -->
 <image  src="/images/Jin Gangchuan.png"></image>
