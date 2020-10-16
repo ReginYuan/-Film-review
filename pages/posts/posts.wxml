@@ -1,2 +1,10 @@
-<!--pages/posts/posts.wxml-->
-<text>pages/posts/posts.wxml</text>
+<view>
+<swiper>
+<swiper-item>
+<!-- 插槽 -->
+<image src="/images/Lipstick.png"></image>
+</swiper-item>
+<swiper-item>Content</swiper-item>
+<swiper-item>Content</swiper-item>
+</swiper>
+</view>
