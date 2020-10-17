@@ -1,10 +1,95 @@
 /* pages/posts/posts.wxss */
-swiper{
-  height:460rpx;
-  width:100%;
+/* 轮播图样式 */
+swiper {
+  height: 460rpx;
+  width: 100%;
 }
 
-swiper  image{
-  height:460rpx;
-  width:100%;
+/* 轮播图图片样式 */
+swiper image {
+  height: 460rpx;
+  width: 100%;
+}
+
+/* 整体文章布局 */
+.post-container {
+  display: flex;
+  /* 内容垂直显示 */
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #ededed;
+  border-bottom: 1rpx solid #ededed;
+  padding-bottom: 10rpx;
+}
+
+/* 作者模块 */
+.post-author-date {
+  margin: 10rpx 0 20rpx 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* 作者样式 */
+.post-author {
+  width: 60rpx;
+  height: 60rpx;
+  /* vertical-align: middle; */
+}
+
+/* 日期样式 */
+.post-date {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  /* vertical-align: middle; */
+}
+
+/* 电影标题样式 */
+.post-title {
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  color: #333;
+}
+
+/* 电影文章配图 */
+.post-image {
+  width: 100%;
+  height: 500rpx;
+  margin-bottom: 30rpx;
+}
+
+/* 电影文章文本样式 */
+.post-content {
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+  letter-spacing: 2rpx;
+}
+
+/* 收藏观看模块样式 */
+
+.post-like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+/* 图片标签样式 */
+.post-like-image {
+  margin-right: 16rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+/* 数量文本样式 */
+.post-like-font {
+  margin-right: 40rpx;
+  font-size: 26rpx;
 }
