@@ -1,14 +1,37 @@
 <view>
-<swiper interval="3000" indicator-dots="{{true}}" autoplay="{{true}}"  >
-<swiper-item >
-<!-- 插槽 -->
-<image  src="/images/Jin Gangchuan.png"></image>
-</swiper-item>
-<swiper-item>
-<image  src="/images/zhangyi.png"></image>
-</swiper-item>
-<swiper-item>
-<image  src="/images/dengchao.png"></image>
-</swiper-item>
-</swiper>
+  <!-- 电影轮播图 -->
+  <swiper interval="3000" indicator-dots="{{true}}" autoplay="{{true}}">
+    <swiper-item>
+      <!-- 插槽 -->
+      <image src="/images/jingangchuan-title.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/jixianfeng-title.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/yidianjiudaojia-title.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 电影文章 -->
+  <view class="post-container">
+    <!-- 作者 -->
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/1.png"></image>
+      <text class="post-date">Nov 18 2020 </text>
+    </view>
+    <!-- 电影简介 -->
+    <text class="post-title">《金刚川》志愿军没有退路</text>
+    <image class="post-image" src="/images/jingangchuan.png"></image>
+    <text class="post-content">以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹！</text>
+
+    <!-- 收藏 观看 功能-->
+    <view class="post-like">
+      <image class="post-like-image" src="/images/icon/chat.png"></image>
+      <text class="post-like-font">92</text>
+      <image class="post-like-image" src="/images/icon/view.png"></image>
+      <text class="post-like-font">182</text>
+    </view>
+  </view>
+
 </view>
