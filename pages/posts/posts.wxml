@@ -33,5 +33,7 @@
       <text class="post-like-font">182</text>
     </view>
   </view>
+<!-- icon组件使用 -->
+  <l-icon  size="128" color="yellow" name="cart" />
 
 </view>
