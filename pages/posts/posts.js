@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    // 初始值  所有页面所有要被绑定的变量都要在这里初始化
     title: "《金刚川》志愿军没有退路"
   },
 
@@ -17,6 +18,7 @@ Page({
 
     // setData接受的是一个javascript对象
     // setData会将要修改或者增加的数据 放入data:{}中
+    // 有创建和更新的作用
     this.setData({
       title:"2021"
     })
