@@ -31,11 +31,13 @@
       <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
       <!-- icon组件使用 -->
       <l-icon class="post-like-image" size="32" color="#666" name="favor" />
-      <text class="post-like-font">{{collection}}</text>
+      <text class="post-like-font">{{dataNum.collection}}</text>
       <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
       <l-icon class="post-like-image" size="32" color="#666" name="eye" />
-      <text class="post-like-font">{{reading}}</text>
+      <text class="post-like-font">{{dataNum.reading}}</text>
+      {{a+b}}
+      {{sum}}
     </view>
   </view>
-  
+
 </view>
