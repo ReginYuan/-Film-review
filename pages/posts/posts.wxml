@@ -27,13 +27,15 @@
 
     <!-- 收藏 观看 功能-->
     <view class="post-like">
-      <image class="post-like-image" src="/images/icon/chat.png"></image>
+      <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
+      <!-- icon组件使用 -->
+      <l-icon class="post-like-image" size="32" color="#666" name="favor" />
       <text class="post-like-font">92</text>
-      <image class="post-like-image" src="/images/icon/view.png"></image>
+      <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
+      <l-icon class="post-like-image" size="32" color="#666" name="eye" />
       <text class="post-like-font">182</text>
     </view>
   </view>
-<!-- icon组件使用 -->
-  <l-icon  size="128" color="yellow" name="cart" />
+
 
 </view>

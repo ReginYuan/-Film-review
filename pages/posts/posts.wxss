@@ -84,8 +84,8 @@ swiper image {
 /* 图片标签样式 */
 .post-like-image {
   margin-right: 16rpx;
-  width: 32rpx;
-  height: 32rpx;
+  /* width: 32rpx;
+  height: 32rpx; */
 }
 
 /* 数量文本样式 */
