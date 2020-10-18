@@ -21,6 +21,31 @@
       <text class="post-date">Nov 18 2020 </text>
     </view>
     <!-- 电影简介 -->
+    <!-- title 数据绑定-->
+    <text class="post-title">{{title}}</text>
+    <image class="post-image" src="/images/jingangchuan.png"></image>
+    <text class="post-content">以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹！</text>
+
+    <!-- 收藏 观看 功能-->
+    <view class="post-like">
+      <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
+      <!-- icon组件使用 -->
+      <l-icon class="post-like-image" size="32" color="#666" name="favor" />
+      <text class="post-like-font">92</text>
+      <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
+      <l-icon class="post-like-image" size="32" color="#666" name="eye" />
+      <text class="post-like-font">182</text>
+    </view>
+  </view>
+
+  <!-- 电影文章 -->
+  <view class="post-container">
+    <!-- 作者 -->
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/1.png"></image>
+      <text class="post-date">Nov 18 2020 </text>
+    </view>
+    <!-- 电影简介 -->
     <text class="post-title">《金刚川》志愿军没有退路</text>
     <image class="post-image" src="/images/jingangchuan.png"></image>
     <text class="post-content">以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹！</text>
@@ -36,6 +61,31 @@
       <text class="post-like-font">182</text>
     </view>
   </view>
+
+  <!-- 电影文章 -->
+  <view class="post-container">
+    <!-- 作者 -->
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/1.png"></image>
+      <text class="post-date">Nov 18 2020 </text>
+    </view>
+    <!-- 电影简介 -->
+    <text class="post-title">《金刚川》志愿军没有退路</text>
+    <image class="post-image" src="/images/jingangchuan.png"></image>
+    <text class="post-content">以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹！</text>
+
+    <!-- 收藏 观看 功能-->
+    <view class="post-like">
+      <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
+      <!-- icon组件使用 -->
+      <l-icon class="post-like-image" size="32" color="#666" name="favor" />
+      <text class="post-like-font">92</text>
+      <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
+      <l-icon class="post-like-image" size="32" color="#666" name="eye" />
+      <text class="post-like-font">182</text>
+    </view>
+  </view>
+
 
 
 </view>
