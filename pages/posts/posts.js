@@ -14,15 +14,12 @@ Page({
    * 程序运行就会监听此方法内的变化
    */
   onLoad: function (options) {
-    console.log("袁修飞");
 
-    // DOM优先  获取属性id以后才可以改变标签的值和显示
-    // a = "金剛川";
-    // var d = document.getElementById('html属性id');
-    // d.innerHTML = a;
-
-    //数据优先 ->数据绑定  可以随意在页面任何一个地方显示{{d}}  数据驱动
-
+    // setData接受的是一个javascript对象
+    // setData会将要修改或者增加的数据 放入data:{}中
+    this.setData({
+      title:"2021"
+    })
 
   },
 
