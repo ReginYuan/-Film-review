@@ -13,31 +13,31 @@
     </swiper-item>
   </swiper>
 
+  <block wx:for="{{posts}}" wx:for-item="item" wx:for-index="index" wx:key="key">
   <!-- 电影文章 -->
   <view class="post-container">
     <!-- 作者 -->
     <view class="post-author-date">
-      <image  wx:if="{{flag}}"  class="post-author" src="{{authorImgsSrc}}"></image>
-      <text  wx:else  class="post-date">{{date}}</text>
+      <image   class="post-author" src="{{item.authorImgsSrc}}"></image>
+      <text  class="post-date">{{item.date}}</text>
     </view>
     <!-- 电影简介 -->
     <!-- title 数据绑定-->
-    <text class="post-title">{{title}}</text>
-    <image class="post-image" src="{{jianjieimgsrc}}"></image>
-    <text class="post-content">{{jianjiecontent}}</text>
+    <text class="post-title">{{item.title}}</text>
+    <image class="post-image" src="{{item.jianjieimgsrc}}"></image>
+    <text class="post-content">{{item.jianjiecontent}}</text>
 
     <!-- 收藏 观看 功能-->
     <view class="post-like">
       <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
       <!-- icon组件使用 -->
       <l-icon class="post-like-image" size="32" color="#666" name="favor" />
-      <text class="post-like-font">{{dataNum.collection}}</text>
+      <text class="post-like-font">{{item.collection}}</text>
       <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
       <l-icon class="post-like-image" size="32" color="#666" name="eye" />
-      <text class="post-like-font">{{dataNum.reading}}</text>
-      {{a+b}}
-      {{sum}}
+      <text class="post-like-font">{{item.reading}}</text>
+  
     </view>
   </view>
-
+</block>
 </view>
