@@ -17,8 +17,8 @@
   <view class="post-container">
     <!-- 作者 -->
     <view class="post-author-date">
-      <image class="post-author" src="{{authorImgsSrc}}"></image>
-      <text class="post-date">{{date}}</text>
+      <image  wx:if="{{flag}}"  class="post-author" src="{{authorImgsSrc}}"></image>
+      <text  wx:else  class="post-date">{{date}}</text>
     </view>
     <!-- 电影简介 -->
     <!-- title 数据绑定-->
