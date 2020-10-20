@@ -5,9 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // 初始值  所有页面所有要被绑定的变量都要在这里初始化
-    title: "《金刚川》志愿军没有退路",
-    flag:true
+
+
   },
 
   /**
@@ -18,31 +17,67 @@ Page({
   onLoad: function (options) {
 
     //要传输的数据 
-    var content = {
-      authorImgsSrc: '/images/avatar/1.png',
-      date: 'Nov 20 2020',
-      title: "《金刚川》志愿军没有退路",
-      jianjieimgsrc: "/images/jingangchuan.png",
-      jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
-      dataNum:{
-        collection:92,
+    var content = [
+
+      {
+        authorImgsSrc: '/images/avatar/1.png',
+        date: 'Nov 20 2020',
+        title: "《金刚川》志愿军没有退路",
+        jianjieimgsrc: "/images/jingangchuan.png",
+        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
+        collection: 92,
         reading: 182,
+
       },
-       
-  
-      detail: "",
-      dateTime: '24小时前',
-      headImgSrc: '',
-      author: '',
-      avatar: "",
-      postId: 3,
-      a:2,
-      b:3
-    }
-    this.setData(content);
+      {
+        authorImgsSrc: '/images/avatar/1.png',
+        date: 'Nov 20 2020',
+        title: "《金刚川》志愿军没有退路",
+        jianjieimgsrc: "/images/jingangchuan.png",
+        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
+        collection: 92,
+        reading: 182,
+
+      },
+
+      {
+        authorImgsSrc: '/images/avatar/1.png',
+        date: 'Nov 20 2020',
+        title: "《金刚川》志愿军没有退路",
+        jianjieimgsrc: "/images/jingangchuan.png",
+        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
+        collection: 92,
+        reading: 182,
+
+      }
+
+      , {
+        authorImgsSrc: '/images/avatar/1.png',
+        date: 'Nov 20 2020',
+        title: "《金刚川》志愿军没有退路",
+        jianjieimgsrc: "/images/jingangchuan.png",
+        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
+        collection: 92,
+        reading: 182,
+
+      },
+      {
+        authorImgsSrc: '/images/avatar/1.png',
+        date: 'Nov 20 2020',
+        title: "《金刚川》志愿军没有退路",
+        jianjieimgsrc: "/images/jingangchuan.png",
+        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
+        collection: 92,
+        reading: 182,
+
+      }
+
+    ]
     this.setData({
-      sum:content.a+content.b
+      // 将数组包装成sj对象
+      posts: content
     });
+
 
   },
 
