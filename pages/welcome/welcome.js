@@ -11,6 +11,17 @@ Page({
 
   onTap: function () {
     console.log('事件触发执行回调函数');
+    // navigateTo 父页面跳向子页面 但保留父页面
+    //navigateTo 页面栈 只支持10个父子级页面
+    // wx.navigateTo({
+    //   url: '/pages/posts/posts',
+    // })
+
+    //平级跳转 跳转以后会销毁上一个页面
+    wx.redirectTo({
+      url: '/pages/posts/posts',
+    })
+
   },
 
 
