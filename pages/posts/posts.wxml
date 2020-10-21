@@ -15,7 +15,7 @@
 
   <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="key">
   <!-- 电影文章 -->
-  <view class="post-container">
+  <view bind:tap="onGoToDetail" class="post-container">
     <!-- 作者 -->
     <view class="post-author-date">
       <image   class="post-author" src="{{item.authorImgsSrc}}"></image>

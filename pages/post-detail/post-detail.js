@@ -1,14 +1,4 @@
-// pages/posts/posts.js
-// node.js 只能使用相对路径
-// var  postData=require('../../data/data');
-
-// es6导入方式
-import {
-  postList
-} from '../../data/data';
-
-
-
+// pages/post-detail/post-detail.js
 Page({
 
   /**
@@ -16,30 +6,13 @@ Page({
    */
   data: {
 
-
   },
 
   /**
    * 生命周期函数--监听页面加载
-   * 钩子函数 hook  function   
-   * 程序运行就会监听此方法内的变化
    */
   onLoad: function (options) {
 
-
-    this.setData({
-      // 将数组包装成sj对象
-      postList
-    });
-
-
-  },
-
-  // 点击进入页面详情功能
-  onGoToDetail(event) {
-    wx.navigateTo({
-      url: '/pages/post-detail/post-detail',
-    })
   },
 
   /**
@@ -58,7 +31,6 @@ Page({
 
   /**
    * 生命周期函数--监听页面隐藏
-   * 条件触发
    */
   onHide: function () {
 
