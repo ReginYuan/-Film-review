@@ -1,4 +1,4 @@
-var local_database = [{
+var postList = [{
     authorImgsSrc: '/images/avatar/1.png',
     date: 'Nov 20 2020',
     title: "《金刚川》志愿军没有退路",
@@ -57,5 +57,5 @@ var local_database = [{
 //   postList: local_database
 // }
 export{
-  local_database
+  postList
 }

@@ -4,7 +4,7 @@
 
 // es6导入方式
 import {
-  local_database
+  postList
 } from '../../data/data';
 
 
@@ -26,66 +26,10 @@ Page({
    */
   onLoad: function (options) {
 
-    //要传输的数据 
-    var content = [
-
-      {
-        authorImgsSrc: '/images/avatar/1.png',
-        date: 'Nov 20 2020',
-        title: "《金刚川》志愿军没有退路",
-        jianjieimgsrc: "/images/jingangchuan.png",
-        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
-        collection: 92,
-        reading: 182,
-
-      },
-      {
-        authorImgsSrc: '/images/avatar/1.png',
-        date: 'Nov 20 2020',
-        title: "《金刚川》志愿军没有退路",
-        jianjieimgsrc: "/images/jingangchuan.png",
-        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
-        collection: 92,
-        reading: 182,
-
-      },
-
-      {
-        authorImgsSrc: '/images/avatar/1.png',
-        date: 'Nov 20 2020',
-        title: "《金刚川》志愿军没有退路",
-        jianjieimgsrc: "/images/jingangchuan.png",
-        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
-        collection: 92,
-        reading: 182,
-
-      }
-
-      , {
-        authorImgsSrc: '/images/avatar/1.png',
-        date: 'Nov 20 2020',
-        title: "《金刚川》志愿军没有退路",
-        jianjieimgsrc: "/images/jingangchuan.png",
-        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
-        collection: 92,
-        reading: 182,
-
-      },
-      {
-        authorImgsSrc: '/images/avatar/1.png',
-        date: 'Nov 20 2020',
-        title: "《金刚川》志愿军没有退路",
-        jianjieimgsrc: "/images/jingangchuan.png",
-        jianjiecontent: "以三个视点讲述一个故事：工兵桥修好又被炸毁再度修好……一个屹立不倒、令敌人费解的战争奇迹",
-        collection: 92,
-        reading: 182,
-
-      }
-
-    ]
+    
     this.setData({
       // 将数组包装成sj对象
-      posts: content
+       postList
     });
 
 

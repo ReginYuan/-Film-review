@@ -13,7 +13,7 @@
     </swiper-item>
   </swiper>
 
-  <block wx:for="{{posts}}" wx:for-item="item" wx:for-index="index" wx:key="key">
+  <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="key">
   <!-- 电影文章 -->
   <view class="post-container">
     <!-- 作者 -->
