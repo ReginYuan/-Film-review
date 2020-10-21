@@ -6,9 +6,4 @@
   <text class="motto">hello,Regin</text>
   <view class="journey-container" bind:tap="onTap"><text class="journey">开启小程序之旅</text></view>
 
-  <view catch:tap="onViewTap" class="journey-container">
-    <text bind:tap="onTextTap" class="journey">开启小程序之旅</text>
-  </view>
-
-
 </view>

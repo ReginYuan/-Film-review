@@ -1,4 +1,14 @@
 // pages/posts/posts.js
+// node.js 只能使用相对路径
+// var  postData=require('../../data/data');
+
+// es6导入方式
+import {
+  local_database
+} from '../../data/data';
+
+
+
 Page({
 
   /**
