@@ -12,16 +12,13 @@
       <image src="/images/yidianjiudaojia-title.png"></image>
     </swiper-item>
   </swiper>
-  <!-- 
-  onGoToDetail 方法 点击跳转到文章详情页面
- MaxImage 方法  点击头像放大头像
- onGoToDetail 方法包含MaxImage 方法,所以必定会产生冲突,由此引发了冒泡时间的应用,给MaxImage 方法catch,阻止事件向上冒泡来达到头像放大和跳转到文章详情页面的冲突. -->
+
   <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="id">
     <!-- 电影文章 -->
     <view bind:tap="onGoToDetail" class="post-container">
       <!-- 作者 -->
       <view class="post-author-date">
-        <image bind:tap="MaxImage" class="post-author" src="{{item.authorImgsSrc}}"></image>
+        <image  class="post-author" src="{{item.authorImgsSrc}}"></image>
         <text class="post-date">{{item.date}}</text>
       </view>
       <!-- 电影简介 -->
