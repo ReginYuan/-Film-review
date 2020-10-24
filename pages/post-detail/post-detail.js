@@ -3,7 +3,9 @@
 import {
   postList
 } from '../../data/data';
-
+// 获取app.js中的全局变量
+const app=getApp();
+console.log(app.test);
 Page({
 
   /**
