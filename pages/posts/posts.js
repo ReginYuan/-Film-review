@@ -37,8 +37,15 @@ Page({
 
   // 点击进入页面详情功能
   onGoToDetail(event) {
+    // event事件对象
+    // 页面与页面数据通信
+
+
+    // 获取点击事件对象数据的id
+    const pid=event.currentTarget.dataset.postId;
     wx.navigateTo({
-      url: '/pages/post-detail/post-detail',
+      // 跳转页面并传递页面id
+      url: '/pages/post-detail/post-detail?pid='+pid,
     })
   },
 

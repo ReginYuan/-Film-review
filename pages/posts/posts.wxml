@@ -6,26 +6,33 @@
       <image src="/images/jingangchuan-title.png"></image>
     </swiper-item>
     <swiper-item>
+      <image src="/images/yidianjiudaojia-title.png"></image>
+    </swiper-item>
+    <swiper-item>
       <image src="/images/jixianfeng-title.png"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/yidianjiudaojia-title.png"></image>
+      <image src="/images/duoguan-title.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/jiangziya-title.png"></image>
     </swiper-item>
   </swiper>
 
   <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="id">
     <!-- 电影文章 -->
-    <view bind:tap="onGoToDetail" class="post-container">
+    <!-- data-post-id="{{item.postId}}" 获取内容id -->
+    <view data-post-id="{{item.postId}}" bind:tap="onGoToDetail" class="post-container">
       <!-- 作者 -->
       <view class="post-author-date">
-        <image  class="post-author" src="{{item.authorImgsSrc}}"></image>
+        <image  class="post-author" src="{{item.authorImgSrc}}"></image>
         <text class="post-date">{{item.date}}</text>
       </view>
       <!-- 电影简介 -->
       <!-- title 数据绑定-->
       <text class="post-title">{{item.title}}</text>
-      <image class="post-image" src="{{item.jianjieimgsrc}}"></image>
-      <text class="post-content">{{item.jianjiecontent}}</text>
+      <image class="post-image" src="{{item.binimgSrc}}"></image>
+      <text   class="post-content">{{item.binContent}}</text>
 
       <!-- 收藏 观看 功能-->
       <view class="post-like">
@@ -35,7 +42,7 @@
         <text class="post-like-font">{{item.collection}}</text>
         <!-- <image class="post-like-image" src="/images/icon/view.png"></image> -->
         <l-icon class="post-like-image" size="32" color="#666" name="eye" />
-        <text class="post-like-font">{{item.reading}}</text>
+        <text  class="post-like-font">{{item.reading}}</text>
 
       </view>
     </view>

@@ -1,18 +1,27 @@
 // pages/post-detail/post-detail.js
+// es6导入方式
+import {
+  postList
+} from '../../data/data';
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    postData:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // 根据传过来的pid查询文章数据    
+    const postData = postList[options.pid]
+    this.setData({
+      postData
+    })
   },
 
   /**
