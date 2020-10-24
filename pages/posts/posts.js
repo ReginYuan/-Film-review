@@ -24,22 +24,49 @@ Page({
    * 钩子函数 hook  function   
    * 程序运行就会监听此方法内的变化
    */
-  onLoad: function (options) {
+  async onLoad(options) {
 
     // 同步操作小程序缓存
-    wx.setStorageSync('key', data);
+    // wx.setStorageSync('key', data);
     // 删除通报不缓存
-    wx.removeStorageSync('key');
+    // wx.removeStorageSync('key');
     // 清空所有同步缓存
-    wx.clearStorageSync();
+    // wx.clearStorageSync();
     // 获取同步缓存
-    const flag = wx.getStorageSync('key');
+    // const flag = wx.getStorageSync('key');
 
+    wx.setStorageSync('key', 1);
     // 异步操作小程序缓存
-    wx.setStorage({
-      data: data,
+
+
+    // 第一种获取异步回调的方法
+    // const flag =  wx.getStorage({
+    //   key: 'key',
+    //   //老版本success获取异步回调
+    //   success(value) {
+    //     console.log(value.data);
+    //   }
+    // });
+
+
+
+    // 第二种获取异步函数回调的方法  
+    // const flag = wx.getStorage({
+    //   key: 'key',
+    // });
+    //获取异步回调
+    // flag.then((value) => {
+    //   console.log(value);
+    // })
+
+
+    // 第三种获取异步函数  async await
+    const flag = await wx.getStorage({
       key: 'key',
     });
+    console.log(flag);
+
+
     this.setData({
       // 将数组包装成sj对象
       postList
