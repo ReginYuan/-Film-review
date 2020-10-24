@@ -26,7 +26,20 @@ Page({
    */
   onLoad: function (options) {
 
+    // 同步操作小程序缓存
+    wx.setStorageSync('key', data);
+    // 删除通报不缓存
+    wx.removeStorageSync('key');
+    // 清空所有同步缓存
+    wx.clearStorageSync();
+    // 获取同步缓存
+    const flag = wx.getStorageSync('key');
 
+    // 异步操作小程序缓存
+    wx.setStorage({
+      data: data,
+      key: 'key',
+    });
     this.setData({
       // 将数组包装成sj对象
       postList
@@ -42,10 +55,10 @@ Page({
 
 
     // 获取点击事件对象数据的id
-    const pid=event.currentTarget.dataset.postId;
+    const pid = event.currentTarget.dataset.postId;
     wx.navigateTo({
       // 跳转页面并传递页面id
-      url: '/pages/post-detail/post-detail?pid='+pid,
+      url: '/pages/post-detail/post-detail?pid=' + pid,
     })
   },
 
