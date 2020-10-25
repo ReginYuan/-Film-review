@@ -10,7 +10,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    postData:{}
+    postData: {}, //保存文章数据
+    _pid: null, //文章id
+    collected: false, //文章状态
+    _postsCollected:{}//所有文章状态缓存
   },
 
   /**
@@ -18,10 +21,43 @@ Page({
    */
   onLoad: function (options) {
     // 根据传过来的pid查询文章数据    
-    const postData = postList[options.pid]
+    const postData = postList[options.pid];
+    // 保存文章id
+    this.data._pid = options.pid;
+    // 获取文章收藏状态
+    const postsCollected = wx.getStorageSync('posts_collected');
+    // 存储文章状态缓存
+    this.data._postsCollected=postsCollected;
+    // 解析文章状态
+    let collected = postsCollected[this.data._pid];
+
+    // 判断文章是否被收藏
+    if (collected === undefined) {
+      // 如果undefined  说明文章从未被收藏过
+      collected = false
+    }
     this.setData({
-      postData
+      postData,
+      collected
     })
+  },
+  // 图片收藏的功能
+  onCollect(event) {
+    //假设文章未收藏
+    //那篇文章被收藏
+    // 数据结构要支持多篇文章是否被收藏
+    let postsCollected =this.data._postsCollected;
+    // 存储文章id并赋值
+    postsCollected[this.data._pid] = !this.data.collected;
+
+    this.setData({
+      // 设置文章收藏标签的切换
+      collected: !this.data.collected
+    })
+    // 同步缓存缓存
+    wx.setStorageSync("posts_collected", postsCollected);
+
+
   },
 
   /**
