@@ -13,7 +13,7 @@ Page({
     postData: {}, //保存文章数据
     _pid: null, //文章id
     collected: false, //文章状态
-    _postsCollected:{}//所有文章状态缓存
+    _postsCollected: {} //所有文章状态缓存
   },
 
   /**
@@ -27,7 +27,7 @@ Page({
     // 获取文章收藏状态
     const postsCollected = wx.getStorageSync('posts_collected');
     // 存储文章状态缓存
-    this.data._postsCollected=postsCollected;
+    this.data._postsCollected = postsCollected;
     // 解析文章状态
     let collected = postsCollected[this.data._pid];
 
@@ -46,7 +46,7 @@ Page({
     //假设文章未收藏
     //那篇文章被收藏
     // 数据结构要支持多篇文章是否被收藏
-    let postsCollected =this.data._postsCollected;
+    let postsCollected = this.data._postsCollected;
     // 存储文章id并赋值
     postsCollected[this.data._pid] = !this.data.collected;
 
@@ -56,7 +56,10 @@ Page({
     })
     // 同步缓存缓存
     wx.setStorageSync("posts_collected", postsCollected);
-
+    wx.showToast({
+      title: this.data.collected?"收藏成功":'取消收藏',
+      duration: 1000
+    })
 
   },
 

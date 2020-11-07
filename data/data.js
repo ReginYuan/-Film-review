@@ -17,12 +17,12 @@ var postList = [{
   },
   {
     postId: 1,
-    author:'凌云',
+    author:'陈利娜',
     authorImgSrc: '/images/avatar/2.png',
     date: 'Nov 15 2020',
     dateTime: '10小时前',
     title: "《一点就到家》落魄年轻人的电商创业史",
-    binimgSrc: "/images/yidianjiudaojia.png",
+    binimgSrc: "/images/yidianjiudaojia.png",
     binContent: "《一点就到家》是由陈可辛监制，许宏宇执导，刘昊然、彭昱畅、尹昉领衔主演的农村题材喜剧片.  该片讲述了三个性格迥异的年轻人从大城市回到云南千年古寨开启创业旅程的故事 .该片于2020年10月4日在中国上映 。",
     detailsTitle:"一点就到家方便你我他",
     detailsImgSrc:"/images/yd-content.png",
@@ -51,7 +51,7 @@ var postList = [{
 
   , {
     postId: 3,
-    author:'房玉霜',
+    author:'王霜',
     authorImgSrc: '/images/avatar/4.png',
     date: 'Nov 25 2020',
     dateTime: '5小时前',
