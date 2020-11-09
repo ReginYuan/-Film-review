@@ -95,3 +95,13 @@
  /* 字间距 */
  letter-spacing: 2px;
 }
+
+/* 播放按钮浮动居中 */
+.audio{
+  position: absolute;
+  width: 102rpx;
+  height: 110rpx;
+  left: 50%;
+  margin-left:-51rpx;
+  top:185rpx;
+}

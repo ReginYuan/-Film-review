@@ -4,7 +4,8 @@
 <!-- 先整体后局部 -->
 <view class="container">
   <image class="head-image" src="{{postData.detailsImgSrc}}"></image>
-
+  <image class="audio" src="/images/music/music-start.png"></image>
+  <image class="audio" src="/images/music/music-stop.png"></image>
   <view class="author-date">
     <image class="avatar" src="{{postData.authorImgSrc}}"></image>
     <text class="avator">{{postData.author}}</text>
@@ -18,7 +19,7 @@
       <image wx:if="{{collected}}" bind:tap="onCollect" class="circle-img" src="/images/icon/collection.png">
       </image>
       <image wx:else bind:tap="onCollect" class="circle-img" src="/images/icon/collection-anti.png"></image>
-      <image class="share-img" src="/images/icon/share.png"></image>
+      <image bind:tap="onShare" class="share-img" src="/images/icon/share.png"></image>
     </view>
     <view class="horizon"></view>
   </view>
