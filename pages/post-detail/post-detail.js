@@ -41,6 +41,12 @@ Page({
       collected
     })
   },
+  // 分享功能
+  onShare(event) {
+    wx.showActionSheet({
+      itemList: ['分享到QQ','分享到微信','分享到朋友圈'],
+    })
+  },
   // 图片收藏的功能
   onCollect(event) {
     //假设文章未收藏
@@ -56,8 +62,9 @@ Page({
     })
     // 同步缓存缓存
     wx.setStorageSync("posts_collected", postsCollected);
+    // 轻提示
     wx.showToast({
-      title: this.data.collected?"收藏成功":'取消收藏',
+      title: this.data.collected ? "收藏成功" : '取消收藏',
       duration: 1000
     })
 
