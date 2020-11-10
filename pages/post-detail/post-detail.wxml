@@ -4,8 +4,7 @@
 <!-- 先整体后局部 -->
 <view class="container">
   <image class="head-image" src="{{postData.detailsImgSrc}}"></image>
-  <image class="audio" src="/images/music/music-start.png"></image>
-  <image class="audio" src="/images/music/music-stop.png"></image>
+  <image bind:tap="onMusic" class="audio" src="/images/music/music-start.png"></image>
   <view class="author-date">
     <image class="avatar" src="{{postData.authorImgSrc}}"></image>
     <text class="avator">{{postData.author}}</text>

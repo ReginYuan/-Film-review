@@ -41,10 +41,19 @@ Page({
       collected
     })
   },
+
+  // 音乐播放
+  onMusic() {
+    const mgr = wx.getBackgroundAudioManager();
+    mgr.src = postList[4].music.url;
+    mgr.title = postList[4].music.title;
+    console.log(mgr);
+  },
+
   // 分享功能
   onShare(event) {
     wx.showActionSheet({
-      itemList: ['分享到QQ','分享到微信','分享到朋友圈'],
+      itemList: ['分享到QQ', '分享到微信', '分享到朋友圈'],
     })
   },
   // 图片收藏的功能
