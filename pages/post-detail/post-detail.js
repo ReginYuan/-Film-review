@@ -11,6 +11,7 @@ Page({
    */
   data: {
     postData: {}, //保存文章数据
+    isplaying:false,//音乐播放
     _pid: null, //文章id
     collected: false, //文章状态
     _postsCollected: {} //所有文章状态缓存
@@ -43,11 +44,14 @@ Page({
   },
 
   // 音乐播放
-  onMusic() {
+  onMusic(event) {
     const mgr = wx.getBackgroundAudioManager();
-    mgr.src = postList[4].music.url;
-    mgr.title = postList[4].music.title;
+    mgr.src = postList[this.data._pid].music.url;
+    mgr.title = postList[this.data._pid].music.title;
     console.log(mgr);
+    this.setData({
+      isplaying:true
+    })
   },
 
   // 分享功能

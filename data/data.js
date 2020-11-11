@@ -15,7 +15,7 @@ var postList = [{
     reading: 182,
     music:{
       title:"谪仙",
-      url:"https://m10.music.126.net/20201110162554/c6061823c9401d12e6904ddf6e4bd581/yyaac/070f/015b/525c/0ec0dd3bab615153060ce671c66ee0ec.m4a",
+      url:"http://m10.music.126.net/20201111085404/eb56de35350acb94577fc0a056ac026e/ymusic/5158/0352/070f/f2f7908e014861dc0cee0e869561ea90.mp3",
       coverimg:'http://p2.music.126.net/X-ZQ6wkyaL9cJTiyxmDhuw==/109951164680974796.jpg'
     }
 
@@ -36,7 +36,7 @@ var postList = [{
     reading: 182,
     music:{
       title:"R.I.O.-Like I Love You（DJ版）",
-      url:"https://m10.music.126.net/20201110113938/5a20f0743f658fb09db809233de22551/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3402481265/9b02/5da2/a248/e95642090455655ef6fff44e76a3e696.m4a",
+      url:"http://m10.music.126.net/20201111083218/a28bf901f511d56cb900cc13665f670f/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/3402480820/cf4f/ba43/67c2/eea03abdebf2d1d4740727c6b0f3b0b1.mp3",
       coverimg:'http://p1.music.126.net/O-wv4PKa1wA6D_0MuQ5yRA==/109951165176891014.jpg'
     }
   },
@@ -57,7 +57,7 @@ var postList = [{
     reading: 182,
     music:{
       title:"控诉",
-      url:"https://m10.music.126.net/20201110114629/04bc32c6874d4bce43b67669662d8790/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3762067312/5f9d/0c8b/a013/53ef1a503d5275f68b34db7eb6c1f303.m4a",
+      url:"http://m10.music.126.net/20201111084243/9ba8bac811b350bf2540c4dc8e62d165/ymusic/obj/w5zDlMODwrDDiGjCn8Ky/3762066648/be1a/4f91/b013/b9b4b47a2c247ba56533d8fffca35665.mp3",
       coverimg:"http://p1.music.126.net/JPMPP9lTeiQD1JfGYx6I0g==/109951165267590761.jpg"
 
     }
@@ -79,7 +79,7 @@ var postList = [{
     reading: 182,
     music:{
       title:"Sold Out",
-      url:"https://m10.music.126.net/20201110115603/d1cd8276e682039c4ef44fe91ae9b516/yyaac/035b/515a/0f58/417892afb0f0b5907d928248c84cb4f1.m4a",
+      url:"http://m10.music.126.net/20201111084813/3f395b850417b1d2a590ffc2a7eaace8/ymusic/550b/540b/550e/bac6e33322ca318d3ff2bd6535bd59cd.mp3",
       coverImg:"http://p1.music.126.net/UR8jAfqus_o1j_QkaYkZ_g==/109951163664241365.jpg"
     }
   },
@@ -99,7 +99,7 @@ var postList = [{
     reading: 182,
     music:{
       title:"你走",
-      url:"https://m10.music.126.net/20201110164217/9effbcb2b8f3652b635fd060964dcb78/yyaac/obj/wonDkMOGw6XDiTHCmMOi/3498900742/e693/c22b/fc85/d60550b5c1fb39d29a74b29d74fae6ec.m4a",
+      url:"http://m10.music.126.net/20201111085247/c19bc17523852e8fb0b3b20b0e936d3e/ymusic/c8e6/35b4/c4ac/1cd49f2f570496778e671834b036c554.mp3",
       coverimg:'http://p1.music.126.net/cZOunhtA0ar342XDBgtO6w==/109951165202186610.jpg'
 
     }
