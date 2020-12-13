@@ -15,8 +15,8 @@ var postList = [{
     reading: 182,
     music:{
       title:"谪仙",
-      url:"http://m10.music.126.net/20201111085404/eb56de35350acb94577fc0a056ac026e/ymusic/5158/0352/070f/f2f7908e014861dc0cee0e869561ea90.mp3",
-      coverimg:'http://p2.music.126.net/X-ZQ6wkyaL9cJTiyxmDhuw==/109951164680974796.jpg'
+      url:"http://m10.music.126.net/20201205121341/71926f9674dcab3d9f8e1df910587650/ymusic/5158/0352/070f/f2f7908e014861dc0cee0e869561ea90.mp3",
+      coverimg:"http://p1.music.126.net/X-ZQ6wkyaL9cJTiyxmDhuw==/109951164680974796.jpg"
     }
 
   },

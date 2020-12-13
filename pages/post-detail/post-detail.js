@@ -3,6 +3,8 @@
 import {
   postList
 } from '../../data/data';
+const app=getApp();
+
 
 Page({
 
@@ -11,10 +13,11 @@ Page({
    */
   data: {
     postData: {}, //保存文章数据
-    isplaying:false,//音乐播放
+    isplaying: false, //音乐播放
     _pid: null, //文章id
     collected: false, //文章状态
-    _postsCollected: {} //所有文章状态缓存
+    _postsCollected: {}, //所有文章状态缓存
+    _mgr: null, //保存全局唯一的背景音频管理器对象
   },
 
   /**
@@ -39,18 +42,55 @@ Page({
     }
     this.setData({
       postData,
-      collected
+      collected,
+      isplaying:app.gIsPlayingMusic
+    })
+    //获取全局唯一的背景音频管理器
+    const mgr = wx.getBackgroundAudioManager();
+    // 将背景音频管理器对象保存到data
+    this.data._mgr = mgr;
+    // 监听音频播放
+    mgr.onPlay(this.onMusicStart);
+    // 监听音频停止播放
+    // mgr.onStop(this.onMusicStop);
+    // 监听音频暂停播放
+    mgr.onPause(this.onMusicStop);
+  },
+
+  // 音乐播放和暂停
+  onMusicStart(event) {
+
+    // 从data中获取音频管理对象
+    const mgr = this.data._mgr;
+    // 根据id获取音乐数据
+    const music = postList[this.data._pid].music;
+    // 将数据写入音频管理器
+    mgr.src = music.url;
+    mgr.title = music.title;
+    mgr.coverImgUrl = music.coverimg;
+  
+    // 将音乐状态调整为播放
+    app.gIsPlayingMusic=true
+
+    this.setData({
+      isplaying: true
     })
   },
 
-  // 音乐播放
-  onMusic(event) {
-    const mgr = wx.getBackgroundAudioManager();
-    mgr.src = postList[this.data._pid].music.url;
-    mgr.title = postList[this.data._pid].music.title;
-    console.log(mgr);
+  // 暂停/停止播放音乐
+  onMusicStop(event) {
+    // 从data中获取音频管理对象
+    const mgr = this.data._mgr;
+    // 停止
+    // mgr.stop();
+    // 暂停
+    mgr.pause();
+ 
+    // 将音乐状态调整为关闭
+  app.gIsPlayingMusic=false
+
     this.setData({
-      isplaying:true
+      isplaying: false
     })
   },
 
